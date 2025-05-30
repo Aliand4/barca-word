@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Aide - Barça World</title>
+  <link rel="stylesheet" href="styleaide.css">
+
+</head>
+<body>
+ <header>
+        <script>
+  // Highlight current page link in nav
+  const links = document.querySelectorAll('nav a');
+  const current = window.location.pathname.split('/').pop();
+
+  links.forEach(link => {
+    if (link.getAttribute('href') === current) {
+      link.style.backgroundColor = 'rgba(255, 255, 255, 0.4)';
+      link.style.borderRadius = '5px';
+    }
+  });
+</script>
+
+
+  <div class="logo-title">
+    <a href="inscription.html">
+      <img src="logo/Logo_FC_Barcelona.svg.png" alt="Logo du FC Barcelone" width="60">
+    </a>
+    <h1>Barça World</h1>
+  </div>
+
+  <nav>
+      <div class="dropdown">
+         <a href="index.html">🏠 Accueil</a>
+            <div class="dropdown-content">
+              <a href="histoire.html">Histoire</a>
+              <a href="palmares.html">Palmarès</a>
+              <a href="joueurs.html">Joueurs</a>
+            </div>
+      </div>
+
+           <a href="contact.html">📩 Contact</a>
+           <a href="aide.html">❓ Aide</a>
+  </nav>  
+    </header>
+  <section class="aide-container">
+    <h1>❓ Besoin d’aide ?</h1>
+
+    <h2>💡 Questions fréquentes</h2>
+    <ul>
+      <li>Comment s’inscrire sur Barça World ? <br>
+        → Allez sur la page <a href="inscription.html">Inscription</a> et remplissez le formulaire.</li>
+      <li>Comment contacter le club ? <br>
+        → Visitez la page <a href="contact.html">Contact</a>.</li>
+      <li>Pourquoi la vidéo ne joue pas automatiquement ?<br>
+        → Activez le son ou vérifiez les permissions du navigateur.</li>
+    </ul>
+
+    <h2>🛠️ Problèmes techniques</h2>
+    <p>Si vous rencontrez un bug ou un affichage étrange :</p>
+    <ul>
+      <li>Essayez d’actualiser la page (Ctrl + R).</li>
+      <li>Vérifiez votre connexion Internet.</li>
+      <li>Utilisez un navigateur compatible (Chrome, Firefox, Edge).</li>
+    </ul>
+
+    <h2>📧 Besoin de plus d’aide ?</h2>
+    <p>Envoyez-nous un message via la page <a href="contact.html">Contact</a>. Nous vous répondrons dans les plus brefs délais.</p>
+  </section>
+
+   <footer>
+    © 2025 Barça World - Fait par Ali
+  </footer>
+</body>
+</html>

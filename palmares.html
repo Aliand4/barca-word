@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palmarès - Barça World</title>
+  <link rel="stylesheet" href="stylepalmares.css">
+</head>
+<body>
+  <header>
+        <script>
+  // Highlight current page link in nav
+  const links = document.querySelectorAll('nav a');
+  const current = window.location.pathname.split('/').pop();
+
+  links.forEach(link => {
+    if (link.getAttribute('href') === current) {
+      link.style.backgroundColor = 'rgba(255, 255, 255, 0.4)';
+      link.style.borderRadius = '5px';
+    }
+  });
+</script>
+ 
+  <div class="logo-title">
+    <a href="inscription.html">
+      <img src="logo/Logo_FC_Barcelona.svg.png" alt="Logo du FC Barcelone" width="60">
+    </a>
+    <h1>Barça World</h1>
+  </div>
+
+        <nav>
+  <div class="dropdown">
+    <a href="index.html">🏠 Accueil</a>
+    <div class="dropdown-content">
+      <a href="histoire.html">Histoire</a>
+      <a href="palmares.html">Palmarès</a>
+      <a href="joueurs.html">Joueurs</a>
+    </div>
+  </div>
+
+  <a href="contact.html">📩 Contact</a>
+  <a href="aide.html">❓ Aide</a>
+</nav>
+    </header>
+
+  <main class="palmares-content">
+    <h1>🏆 Palmarès du FC Barcelone</h1>
+
+    <section class="trophies">
+      <div class="trophy-card">
+        <img src="logo/ucl.jpg" alt="Ligue des Champions">
+        <h3>Ligue des Champions</h3>
+        <p>5 titres<br>1992, 2006, 2009, 2011, 2015</p>
+      </div>
+
+      <div class="trophy-card">
+        <img src="logo/laliga.jpg" alt="La Liga">
+        <h3>La Liga</h3>
+        <p>27 titres<br>Dernier en 2023</p>
+      </div>
+
+      <div class="trophy-card">
+        <img src="logo/copadelrey.jpg" alt="Coupe du Roi">
+        <h3>Coupe du Roi</h3>
+        <p>31 titres<br>Record en Espagne</p>
+      </div>
+    </section>
+
+    <section class="video-section">
+      <h2>🎥 Les Plus Beaux Moments</h2>
+      <video autoplay loop playsinline muted id="barcaVideo">
+        <source src="video/25 TROPHY CELEBRATION! EL CLÁSICO🔵🔴🏆.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture vidéo.
+      </video>
+      <button id="soundBtn">🔊 Activer le son</button>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Barça World - Fait par Ali
+  </footer>
+
+  <script>
+    const video = document.getElementById('barcaVideo');
+    const btn = document.getElementById('soundBtn');
+    btn.addEventListener('click', () => {
+      video.muted = false;
+      video.play();
+      btn.style.display = 'none';
+    });
+  </script>
+</body>
+</html>

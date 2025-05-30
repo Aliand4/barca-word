@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil - Barça World</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="styleaccueil.css">
+</head>
+<body>
+
+  <header>
+        <script>
+  // Highlight current page link in nav
+  const links = document.querySelectorAll('nav a');
+  const current = window.location.pathname.split('/').pop();
+
+  links.forEach(link => {
+    if (link.getAttribute('href') === current) {
+      link.style.backgroundColor = 'rgba(255, 255, 255, 0.4)';
+      link.style.borderRadius = '5px';
+    }
+  });
+</script>
+ 
+  <div class="logo-title">
+    <a href="inscription.html">
+      <img src="logo/Logo_FC_Barcelona.svg.png" alt="Logo du FC Barcelone" width="60">
+    </a>
+    <h1>Barça World</h1>
+  </div>
+
+        <nav>
+  <div class="dropdown">
+    <a href="index.html">🏠 Accueil</a>
+    <div class="dropdown-content">
+      <a href="histoire.html">Histoire</a>
+      <a href="palmares.html">Palmarès</a>
+      <a href="joueurs.html">Joueurs</a>
+    </div>
+  </div>
+
+  <a href="contact.html">📩 Contact</a>
+  <a href="aide.html">❓ Aide</a>
+</nav>
+    </header>
+
+  <div class="content">
+    <section class="intro">
+      <h1>Bienvenue sur Barça World 🔵🔴</h1>
+      <p>Retrouve ici toute l’histoire, les joueurs et les émotions du FC Barcelona ! Le club catalan n’est pas qu’un club, c’est une identité, une passion mondiale.</p>
+    </section>
+
+<section class="video-section">
+      <h2>🎥 Les plus beaux buts du Barça</h2>
+      <video autoplay loop playsinline muted id="barcaVideo">
+        <source src="video/The best Barça goals of the decade 2010-2019 _ Part Two.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture vidéo.
+      </video>
+      <button id="soundBtn">🔊 Activer le son</button>
+    </section>
+
+   <section class="gallery">
+      <img src="logo/instante-en-el-que-pique-muestra-la--manita--a-la-grada-del-camp-nou--fcbarcelona.jpg" alt="Victoire">
+      <img src="logo/Lionel-Messi-Luis-Suarez-Neymar-Barcelona-2015.jpg" alt="Équipe" >
+      <img src="logo/lionel-messi-fc-barcelona-hd-4k-wallpaper-preview.jpg" alt="Messi" > 
+    </section>
+ 
+    <section class="links">
+      <h2>🌐 Liens utiles</h2>
+      <a href="https://www.fcbarcelona.com/en/" target="_blank">Site Officiel</a>
+      <a href="https://www.instagram.com/fcbarcelona/" target="_blank">Instagram Barça</a>
+      <a href="https://twitter.com/FCBarcelona" target="_blank">Twitter Barça</a>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 Barça World - Fait par Ali
+  </footer>
+
+</body>
+</html>

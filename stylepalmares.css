@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1d1d1d;
+  color: #ffcb05;
+  background-image: url('logo/copadelrey.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+}
+header {
+    background: linear-gradient(90deg, #a50044, #004d98); 
+    color: #ffcb05;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header img {
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: rotate(10deg) scale(1.05);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+header img {
+  width: 60px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffcb05;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #004d98;
+  padding: 10px;
+  border-radius: 10px;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+.dropdown-content a {
+  color: #ffcb05;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.palmares-content {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 203, 5, 0.3);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #ffcb05;
+  margin-bottom: 20px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.trophies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.trophy-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #004d98;
+  border-radius: 15px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 15px rgba(165, 0, 68, 0.4);
+}
+
+.trophy-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 203, 5, 0.5);
+}
+
+
+.trophy-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.trophy-card:hover img {
+  transform: rotate(-2deg) scale(1.05);
+}
+
+
+.trophy-card h3 {
+  color: #a50044;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+
+
+.trophy-card p {
+  color: #ffcb05;
+  line-height: 1.5;
+  font-size: 1.05em;
+}
+
+.video-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.video-section video {
+  width: 100%;
+ 
+  box-shadow: 0 0 15px rgba(255, 203, 5, 0.4);
+}
+footer {
+   text-align: center;
+  background:  linear-gradient(90deg, #a50044, #004d98);  
+  color: #ffcb05;
+  padding: 1em;
+  font-size: 0.9em;
+  width: 100vw; 
+  margin: 0;     
+  border: none;
+}
+
+#soundBtn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #a50044;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#soundBtn:hover {
+  background: #ffcb05;
+  color: #1d1d1d;
+}
+
+@media (max-width: 768px) {
+  .trophies {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trophy-card {
+    width: 90%;
+  }
+}

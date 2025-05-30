@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylejoueurs.css">
+    <title>Document</title>
+</head>
+<body>
+
+     <header>
+        <script>
+  // Highlight current page link in nav
+  const links = document.querySelectorAll('nav a');
+  const current = window.location.pathname.split('/').pop();
+
+  links.forEach(link => {
+    if (link.getAttribute('href') === current) {
+      link.style.backgroundColor = 'rgba(255, 255, 255, 0.4)';
+      link.style.borderRadius = '5px';
+    }
+  });
+</script>
+
+
+  <div class="logo-title">
+    <a href="inscription.html">
+      <img src="logo/Logo_FC_Barcelona.svg.png" alt="Logo du FC Barcelone" width="60">
+    </a>
+    <h1>Barça World</h1>
+  </div>
+
+  <nav>
+      <div class="dropdown">
+         <a href="index.html">🏠 Accueil</a>
+            <div class="dropdown-content">
+              <a href="histoire.html">Histoire</a>
+              <a href="palmares.html">Palmarès</a>
+              <a href="joueurs.html">Joueurs</a>
+            </div>
+      </div>
+
+           <a href="contact.html">📩 Contact</a>
+           <a href="aide.html">❓ Aide</a>
+  </nav>  
+    </header>
+    
+    <section class="joueurs">
+  <h2>👥 Effectif du FC Barcelone 2024-2025</h2>
+
+  <div class="groupe">
+    <h3>🧤 Gardiens</h3>
+    <ul>
+      <li>Marc-André ter Stegen</li>
+      <li>Wojciech Szczęsny</li>
+      <li>Iñaki Peña</li>
+      <li>Ander Astralaga</li>
+      <li>Diego Kochen</li>
+      <li>Áron Yaakobishvili</li>
+    </ul>
+  </div>
+
+  <div class="groupe">
+    <h3>🛡️ Défenseurs</h3>
+    <ul>
+      <li>Ronald Araújo</li>
+      <li>Jules Koundé</li>
+      <li>Andreas Christensen</li>
+      <li>Íñigo Martínez</li>
+      <li>Eric García</li>
+      <li>Pau Cubarsí</li>
+      <li>Héctor Fort</li>
+      <li>Gérard Martín</li>
+      <li>Alejandro Balde</li>
+      <li>Alex Valle</li>
+      <li>Sergi Domínguez</li>
+      <li>Álvaro Cortés</li>
+      <li>Alexis Olmedo</li>
+      <li>Andrés Cuenca</li>
+      <li>Guillem Víctor</li>
+      <li>Landry Farré</li>
+    </ul>
+  </div>
+
+  <div class="groupe">
+    <h3>🧠 Milieux</h3>
+    <ul>
+      <li>Frenkie de Jong</li>
+      <li>Gavi</li>
+      <li>Pedri</li>
+      <li>Fermín López</li>
+      <li>Marc Casadó</li>
+      <li>Pablo Torre</li>
+      <li>Dani Olmo</li>
+      <li>Oriol Romeu</li>
+      <li>Marc Bernal</li>
+      <li>Guille Fernández</li>
+      <li>Noah Darvich</li>
+    </ul>
+  </div>
+
+  <div class="groupe">
+    <h3>⚡ Attaquants</h3>
+    <ul>
+      <li>Robert Lewandowski</li>
+      <li>Ferran Torres</li>
+      <li>Raphinha</li>
+      <li>Lamine Yamal</li>
+      <li>Ansu Fati</li>
+      <li>Pau Víctor</li>
+      <li>Dani Rodríguez</li>
+      <li>Toni Fernández</li>
+    </ul>
+  </div>
+
+  <div class="groupe">
+    <h3>👔 Entraîneur</h3>
+    <ul>
+      <li>Hans-Dieter Flick</li>
+    </ul>
+  </div>
+</section>
+
+ <footer>
+    © 2025 Barça World - Fait par Ali
+  </footer>
+</body>
+</html>

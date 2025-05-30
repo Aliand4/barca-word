@@ -1,0 +1,155 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url("logo/94101691-5163-4cd9-944d-d5aefac421b2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: #ffcb05;
+  margin: 0;
+}
+
+header {
+  background: linear-gradient(90deg, #a50044, #004d98);
+  color: #ffcb05;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header img {
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+header img:hover {
+  transform: rotate(10deg) scale(1.05);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffcb05;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #004d98;
+  min-width: 160px;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  color: #ffcb05;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 80px auto; 
+  padding: 30px;
+  background: linear-gradient(90deg, #a50044, #004d98); 
+  color: #ffcb05;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  backdrop-filter: blur(4px);
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffcb05;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-form input,.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: black;
+}
+
+.contact-form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #a50044;
+  color: #ffcb05;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #c2185b;
+}
+ footer {
+  text-align: center;
+  background: linear-gradient(90deg, #a50044, #004d98);  
+  color: #ffcb05;
+  padding: 1em;
+  font-size: 0.9em;
+  width: 100vw; 
+  margin: 0;     
+  border: none;
+}

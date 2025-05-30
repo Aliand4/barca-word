@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="stylehistoire.css">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+        <script>
+  // Highlight current page link in nav
+  const links = document.querySelectorAll('nav a');
+  const current = window.location.pathname.split('/').pop();
+
+  links.forEach(link => {
+    if (link.getAttribute('href') === current) {
+      link.style.backgroundColor = 'rgba(255, 255, 255, 0.4)';
+      link.style.borderRadius = '5px';
+    }
+  });
+</script>
+ 
+  <div class="logo-title">
+    <a href="inscription.html">
+      <img src="logo/Logo_FC_Barcelona.svg.png" alt="Logo du FC Barcelone" width="60">
+    </a>
+    <h1>Barça World</h1>
+  </div>
+
+        <nav>
+  <div class="dropdown">
+    <a href="index.html">🏠 Accueil</a>
+    <div class="dropdown-content">
+      <a href="histoire.html">Histoire</a>
+      <a href="palmares.html">Palmarès</a>
+      <a href="joueurs.html">Joueurs</a>
+    </div>
+  </div>
+
+  <a href="contact.html">📩 Contact</a>
+  <a href="aide.html">❓ Aide</a>
+</nav>
+    </header>
+<main class="histoire-content">
+
+  <h1>📖 Histoire du FC Barcelone</h1>
+
+  <section class="intro">
+    <p>
+      Fondé en 1899 par un groupe de footballeurs suisses, anglais et catalans dirigé par Joan Gamper,
+      le FC Barcelone est bien plus qu’un club. Depuis ses débuts, le Barça incarne l’esprit catalan,
+      la passion du football et la lutte pour l’identité.
+    </p>
+    <img src="logo/joan gamper.jpg" alt="Joan Gamper - Fondateur du Barça" class="image-section">
+    <p class="caption">Joan Gamper, fondateur du club en 1899</p>
+  </section>
+
+  <section class="legendes">
+    <h2>⭐ Légendes du Club</h2>
+    <div class="players-grid">
+      <div class="player-card">
+        <img src="logo/wp13094066.jpg" alt="Lionel Messi">
+        <h3>Lionel Messi</h3>
+        <p>Meilleur buteur de l'histoire du club. 8 Ballons d'Or. Une légende vivante.</p>
+      </div>
+      <div class="player-card">
+        <img src="logo/johan-cruijff-cruyff-ajax-1618234693-60657.jpg" alt="Johan Cruyff">
+        <h3>Johan Cruyff</h3>
+        <p>Joueur puis entraîneur mythique, père du "style Barça" basé sur la possession.</p>
+      </div>
+      <div class="player-card">
+        <img src="logo/andres-iniesta-barcelona-800x533-1.jpg" alt="Andrés Iniesta">
+        <h3>Andrés Iniesta</h3>
+        <p>Magicien du milieu de terrain, formé à La Masia. Auteur de passes inoubliables.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="campnou">
+    <h2>🏟️ Le Camp Nou</h2>
+    <p>
+      Le Camp Nou, inauguré en 1957, est le plus grand stade d'Europe avec plus de 99 000 places.
+      Il est actuellement en rénovation pour devenir l’un des stades les plus modernes au monde.
+    </p>
+    <img src="logo/Spotify-Camp-Nou_Memorabilia.jpg" alt="Stade Camp Nou" class="image-section">
+  </section>
+
+
+ <section class="video">
+      <h2>🎥 Les Plus Beaux Moments</h2>
+      <video autoplay loop playsinline muted id="barcaVideo">
+       <source src="video/THE 10 BEST GOALS OF 2025 (SO FAR) 💙❤️ _ FC Barcelona.mp4" type="video/mp4">
+         Votre navigateur ne supporte pas la lecture de la vidéo
+      </video>
+      <button id="soundBtn">🔊 Activer le son</button>
+    </section>
+
+
+  <script>
+    const video = document.getElementById('barcaVideo');
+    const btn = document.getElementById('soundBtn');
+    btn.addEventListener('click', () => {
+      video.muted = false;
+      video.play();
+      btn.style.display = 'none';
+    });
+  </script>
+</main>
+
+  <footer>
+    © 2025 Barça World - Fait par Ali
+  </footer>
+</body>
+</html>
